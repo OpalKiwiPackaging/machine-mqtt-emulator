@@ -1,0 +1,14 @@
+{
+  "name": "machine-emulator",
+  "version": "1.0.0",
+  "description": "Simulates MQTT machine messages from config",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "mqtt": "^5.0.0"
+  }
+}

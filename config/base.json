@@ -1,0 +1,350 @@
+{
+  "mqtt": {
+    "host": "mqtt://ignition.opalview.co.nz"
+  },
+  "machine": {
+    "topicTemplate": "Edge Nodes/TestEm/{machineId}/{tag}",
+    "batchMode": false,
+    "tags": [
+      {
+        "name": "Online",
+        "type": "bool",
+        "value": true,
+        "interval": 5,
+        "chanceToUpdate": 0.05
+      },
+      {
+        "name": "MachineState",
+        "type": "int",
+        "min": 0,
+        "max": 5,
+        "interval": 2,
+        "chanceToUpdate": 0.9
+      },
+      {
+        "name": "GlueReady",
+        "type": "int",
+        "min": 0,
+        "max": 1,
+        "interval": 10,
+        "chanceToUpdate": 0.3
+      },
+      {
+        "name": "Customer",
+        "type": "string",
+        "value": "Opal",
+        "interval": 30,
+        "chanceToUpdate": 0.01
+      },
+      {
+        "name": "CycleCount",
+        "type": "int",
+        "interval": 2,
+        "chanceToUpdate": 1,
+        "minDelayMs": 1100,
+        "maxDelayMs": 2400,
+        "stepSize": 1
+      },
+      {
+        "name": "Inputs",
+        "type": "bit",
+        "min": 0,
+        "max": 65535,
+        "chanceToUpdate": 0.5
+      },
+      {
+        "name": "PB_Start",
+        "type": "bool",
+        "chanceToUpdate": 0.08
+      },
+      {
+        "name": "PB_Stop",
+        "type": "bool",
+        "chanceToUpdate": 0.02
+      },
+      {
+        "name": "PB_Reset",
+        "type": "bool",
+        "chanceToUpdate": 0.02
+      },
+      {
+        "name": "PB_Manual",
+        "type": "bool",
+        "chanceToUpdate": 0.08
+      },
+      {
+        "name": "PB_Auto",
+        "type": "bool",
+        "chanceToUpdate": 0.04
+      },
+      {
+        "name": "Sensor_1",
+        "type": "bool",
+        "chanceToUpdate": 0.1
+      },
+      {
+        "name": "Sensor_2",
+        "type": "bool",
+        "chanceToUpdate": 0.09
+      },
+      {
+        "name": "Sensor_3",
+        "type": "bool",
+        "chanceToUpdate": 0.09
+      },
+      {
+        "name": "Sensor_4",
+        "type": "bool",
+        "chanceToUpdate": 0.03
+      },
+      {
+        "name": "Sensor_5",
+        "type": "bool",
+        "chanceToUpdate": 0.05
+      },
+      {
+        "name": "Sensor_6",
+        "type": "bool",
+        "chanceToUpdate": 0.01
+      },
+      {
+        "name": "Sensor_7",
+        "type": "bool",
+        "chanceToUpdate": 0.07
+      },
+      {
+        "name": "Sensor_8",
+        "type": "bool",
+        "chanceToUpdate": 0.08
+      },
+      {
+        "name": "Sensor_9",
+        "type": "bool",
+        "chanceToUpdate": 0.07
+      },
+      {
+        "name": "Sensor_10",
+        "type": "bool",
+        "chanceToUpdate": 0.01
+      },
+      {
+        "name": "Alarm_1",
+        "type": "bool",
+        "chanceToUpdate": 0.04
+      },
+      {
+        "name": "Alarm_2",
+        "type": "bool",
+        "chanceToUpdate": 0.06
+      },
+      {
+        "name": "Alarm_3",
+        "type": "bool",
+        "chanceToUpdate": 0.09
+      },
+      {
+        "name": "Alarm_4",
+        "type": "bool",
+        "chanceToUpdate": 0.02
+      },
+      {
+        "name": "Alarm_5",
+        "type": "bool",
+        "chanceToUpdate": 0.05
+      },
+      {
+        "name": "Drive1_Position",
+        "type": "int",
+        "min": 0,
+        "max": 6699,
+        "chanceToUpdate": 0.33
+      },
+      {
+        "name": "Drive2_Position",
+        "type": "int",
+        "min": 0,
+        "max": 6343,
+        "chanceToUpdate": 0.49
+      },
+      {
+        "name": "Drive3_Position",
+        "type": "int",
+        "min": 0,
+        "max": 6597,
+        "chanceToUpdate": 0.82
+      },
+      {
+        "name": "Drive4_Position",
+        "type": "int",
+        "min": 0,
+        "max": 8440,
+        "chanceToUpdate": 0.23
+      },
+      {
+        "name": "Drive5_Position",
+        "type": "int",
+        "min": 0,
+        "max": 8638,
+        "chanceToUpdate": 0.36
+      },
+      {
+        "name": "Drive1_Torque",
+        "type": "int",
+        "min": 0,
+        "max": 7549,
+        "chanceToUpdate": 0.63
+      },
+      {
+        "name": "Drive2_Torque",
+        "type": "int",
+        "min": 0,
+        "max": 1318,
+        "chanceToUpdate": 0.54
+      },
+      {
+        "name": "Drive3_Torque",
+        "type": "int",
+        "min": 0,
+        "max": 4103,
+        "chanceToUpdate": 0.6
+      },
+      {
+        "name": "Drive4_Torque",
+        "type": "int",
+        "min": 0,
+        "max": 3532,
+        "chanceToUpdate": 0.52
+      },
+      {
+        "name": "Drive5_Torque",
+        "type": "int",
+        "min": 0,
+        "max": 1993,
+        "chanceToUpdate": 0.56
+      },
+      {
+        "name": "Counter_1",
+        "type": "int",
+        "min": 0,
+        "max": 9174,
+        "chanceToUpdate": 0.18
+      },
+      {
+        "name": "Counter_2",
+        "type": "int",
+        "min": 0,
+        "max": 3224,
+        "chanceToUpdate": 0.38
+      },
+      {
+        "name": "Counter_3",
+        "type": "int",
+        "min": 0,
+        "max": 1065,
+        "chanceToUpdate": 0.15
+      },
+      {
+        "name": "Counter_4",
+        "type": "int",
+        "min": 0,
+        "max": 9170,
+        "chanceToUpdate": 0.61
+      },
+      {
+        "name": "Counter_5",
+        "type": "int",
+        "min": 0,
+        "max": 7700,
+        "chanceToUpdate": 0.8
+      },
+      {
+        "name": "Counter_6",
+        "type": "int",
+        "min": 0,
+        "max": 4989,
+        "chanceToUpdate": 0.3
+      },
+      {
+        "name": "Counter_7",
+        "type": "int",
+        "min": 0,
+        "max": 6502,
+        "chanceToUpdate": 0.11
+      },
+      {
+        "name": "Counter_8",
+        "type": "int",
+        "min": 0,
+        "max": 9316,
+        "chanceToUpdate": 0.22
+      },
+      {
+        "name": "Counter_9",
+        "type": "int",
+        "min": 0,
+        "max": 4336,
+        "chanceToUpdate": 0.24
+      },
+      {
+        "name": "Counter_10",
+        "type": "int",
+        "min": 0,
+        "max": 8985,
+        "chanceToUpdate": 0.17
+      },
+      {
+        "name": "IdleTime_1",
+        "type": "int",
+        "min": 0,
+        "max": 2222,
+        "chanceToUpdate": 0.7
+      },
+      {
+        "name": "IdleTime_2",
+        "type": "int",
+        "min": 0,
+        "max": 5454,
+        "chanceToUpdate": 0.69
+      },
+      {
+        "name": "IdleTime_3",
+        "type": "int",
+        "min": 0,
+        "max": 8353,
+        "chanceToUpdate": 0.43
+      },
+      {
+        "name": "IdleTime_4",
+        "type": "int",
+        "min": 0,
+        "max": 6985,
+        "chanceToUpdate": 0.51
+      },
+      {
+        "name": "IdleTime_5",
+        "type": "int",
+        "min": 0,
+        "max": 1818,
+        "chanceToUpdate": 0.62
+      },
+      {
+        "name": "ProductType",
+        "type": "string",
+        "value": "Box200",
+        "chanceToUpdate": 0.01
+      },
+      {
+        "name": "BatchNumber",
+        "type": "string",
+        "value": "Tray300",
+        "chanceToUpdate": 0.01
+      },
+      {
+        "name": "Operator",
+        "type": "string",
+        "value": "Box200",
+        "chanceToUpdate": 0.01
+      }
+    ]
+  }
+}

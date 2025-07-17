@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  emulator:
+    build: .
+    container_name: emulator_all
+    environment:
+      - CONFIG=../config/base.json
+      - MACHINES=6
+      - MQTT_USERNAME=${MQTT_USERNAME}
+      - MQTT_PASSWORD=${MQTT_PASSWORD}
+      - MQTT_CLIENT_ID=emulator
+    volumes:
+      - ./config:/app/config:ro
+      - ./state:/app/state

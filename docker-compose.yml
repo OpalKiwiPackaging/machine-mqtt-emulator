@@ -4,7 +4,7 @@ services:
     container_name: emulator_all
     environment:
       - CONFIG=/app/config/base.json
-      - MACHINES=1
+      - MACHINES=100
       - MQTT_HOST=${MQTT_HOST}
       - MQTT_USERNAME=${MQTT_USERNAME}
       - MQTT_PASSWORD=${MQTT_PASSWORD}
